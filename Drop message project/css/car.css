@@ -1,0 +1,92 @@
+.center{
+    text-align: center;
+    padding: 10px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+}
+.back{
+    background-color: rgb(255, 255, 255);
+}
+.text{
+    font-family: 'Cinzel', serif;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap; 
+    color: white;
+    /* font-size: 20px; */
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.move{
+    margin-top: 20%;
+}
+.color{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 180px;
+    padding: 15px;
+    background-color: blue;
+}
+.color2{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 180px;
+    padding: 15px;
+    background-color: rgb(255, 0, 0);
+}
+.color3{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 180px;
+    padding: 15px;
+    background-color: rgb(0, 195, 255);
+}
+.slide{
+    position: relative;
+}
+.connect{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right,black);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1.5s;
+}
+
+.slide:hover .text{
+    display: block;
+}
+.slide:hover .connect{
+    opacity: 90%;
+}
+.form-control{
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgb(0, 255, 13);
+}
+.bord{
+    /* border: 1px solid black; */
+}
+@media screen and (max-width:576px){
+    .slide:hover .layer{
+        width: 100%;
+    }
+}
+@media screen and (min-width:577px){
+    .slide:hover .layer{
+        width: 70%;
+    }
+}
+ 

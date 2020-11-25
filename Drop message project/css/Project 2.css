@@ -1,0 +1,112 @@
+.center{
+    text-align: center;
+    padding: 10px;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px black;
+    border-bottom: 1px dashed white;
+}
+.back{
+    background-image: linear-gradient(rgb(255, 255, 255),white,#789cb6,);
+}
+.text{
+    font-family: 'Cinzel', serif;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap; 
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+   
+}
+.move{
+    margin-top: 20%;
+}
+.color{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 180px;
+    padding: 15px;
+    background-color: blue;
+}
+.color:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+.color2{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 180px;
+    padding: 15px;
+    background-color: rgb(255, 0, 0);
+}
+.color2:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+.color3{
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 180px;
+    padding: 15px;
+    background-color: rgb(0, 195, 255);
+}
+.color3:hover{
+    background-color: white;
+    color:rgb(0, 195, 255) ;
+    border: 1px solid rgb(0, 195, 255) ;
+}
+.slide{
+    position: relative;
+    border: none;
+}
+.connect{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right,black);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 1.5s;
+    
+    
+}
+
+.slide:hover .text{
+    display: block;
+}
+body{
+    background-image: linear-gradient(#789cb6,rgb(255, 255, 255),white);
+}
+.form-control{
+    border: none;
+}
+.form-group{
+    background-color: white;
+    border: 1px dashed rgb(180, 180, 180);
+    border-radius: 5px;
+    padding: 3px;
+}
+@media screen and (max-width:576px){
+    .slide:hover .layer{
+        width: 100%;
+    }
+}
+@media screen and (min-width:577px){
+    .slide:hover .layer{
+        width: 50%;
+    }
+}

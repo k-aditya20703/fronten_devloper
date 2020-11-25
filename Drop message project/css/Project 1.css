@@ -1,0 +1,18 @@
+body{
+    background-image: url(/web-templet/Drop\ message\ project/images/keyboard2.jpg);
+   
+}
+.move{
+  margin-top: 12%;
+}
+.card2{
+    border: none;
+}
+.round{
+  border: 1px solid rgb(156, 156, 156);
+  padding: 10px;
+  border-radius: 180px;
+  box-shadow: 1px 1px 3px black;
+  
+}
+
